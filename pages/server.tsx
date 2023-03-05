@@ -42,6 +42,7 @@ export const getServerSideProps: GetServerSideProps<{
   return {
     props: {
       session: await getSession(context),
+      additional: "Hayam",
     },
   }
 }
