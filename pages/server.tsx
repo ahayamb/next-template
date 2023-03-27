@@ -13,7 +13,10 @@ export default function Page() {
 
   return (
     <Layout>
-      <h1>Server Side Rendering</h1>
+      <h1>
+        Server Side Rendering:{" "}
+        {session?.user?.name === "Ahmad Hayam" ? "Empunya" : "Orang Lain"}
+      </h1>
       <p>
         This page uses the universal <strong>getSession()</strong> method in{" "}
         <strong>getServerSideProps()</strong>.
